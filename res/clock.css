@@ -41,7 +41,7 @@ body {
     /* account for the height of the clock hands */
 }
 
-#clock-face div {
+.hand {
     width: 50%;
     height: 4px;
     background: white;
@@ -65,7 +65,7 @@ body {
     width: 30%;
 }
 
-.no-trans {
+#second-hand.no-trans {
     transition: none;
 }
 

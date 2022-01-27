@@ -1,13 +1,16 @@
-function clock() {
-    const secondHand = document.getElementById('second-hand');
-    const minsHand   = document.getElementById('min-hand');
-    const hourHand   = document.getElementById('hour-hand');
-    const minsDigit  = document.getElementById('min-digit');
-    const hourDigit  = document.getElementById('hour-digit');
+class Clock {
+    constructor() {
+        this.update();
+    }
 
-    function setDate() {
+    update() {
+        const secondHand = document.getElementById('second-hand');
+        const minsHand   = document.getElementById('min-hand');
+        const hourHand   = document.getElementById('hour-hand');
+        const minsDigit  = document.getElementById('min-digit');
+        const hourDigit  = document.getElementById('hour-digit');
+
         const now = new Date();
-
         const seconds = now.getSeconds();
         const secondsDegrees = ((seconds / 60) * 360);
         secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
@@ -30,7 +33,4 @@ function clock() {
 
         document.title = hourDigit.innerText + ':' + minsDigit.innerText;
     }
-
-    setInterval(setDate, 1000);
-    setDate();
 }
