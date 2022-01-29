@@ -1,4 +1,4 @@
 # Clock
-Simple JavaScript clock.
+Simple JavaScript Clock
 
 https://deanwagner.github.io/clock/
