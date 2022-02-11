@@ -3,7 +3,7 @@
 /**
  * Simple JavaScript Clock
  * @class
- * @author  Dean Wagner <info@deanwagner.net>
+ * @author Dean Wagner <info@deanwagner.net>
  */
 class Clock {
 
